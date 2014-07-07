@@ -1,37 +1,68 @@
 /* CSS declarations go here */
+.ribbon {
+    background-color: #a00;
+    overflow: hidden;
+    white-space: nowrap;
+    /* top left corner */
+    position: absolute;
+    left: 800px;
+    top: 140px;
+    /* 45 deg ccw rotation */
+    -webkit-transform: rotate(+45deg);
+    -moz-transform: rotate(+45deg);
+    -ms-transform: rotate(+45deg);
+    -o-transform: rotate(+45deg);
+    transform: rotate(+45deg);
+    /* shadow */
+    -webkit-box-shadow: 0 0 10px #888;
+    -moz-box-shadow: 0 0 10px #888;
+    box-shadow: 0 0 10px #888;
+}
+.ribbon a {
+    border: 1px solid #faa;
+    color: #fff;
+    display: block;
+    font: bold 81.25% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 1px 0;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    /* shadow */
+    text-shadow: 0 0 5px #444;
+}
 
 body {
-  background-color: #252525;
-  color: rgb(31, 235, 31); /* green */
-  font-family: monospace;
-  font-size: 1.5em;
+    background-color: #252525;
+    color: rgb(31, 235, 31); /* green */
+    font-family: monospace;
+    font-size: 1.5em;
 }
 
 
 #buffer {
-  margin-top: 50px;
-  width: 90%;
-  padding: 1em 1em 1em 1em;
-  overflow: auto;
-  font-size: 1.25em; }
+    margin-top: 50px;
+    width: 90%;
+    padding: 1em 1em 1em 1em;
+    overflow: auto;
+font-size: 1.25em; }
 
 
 #command-line {
-  margin-top: -30px;
-  width: 90%;
-  font-size: 1.5em;
-  padding: 0em;
-  position: fixed;
-  display: block; }
-  #info-ui {
+    margin-top: -30px;
+    width: 90%;
+    font-size: 1.5em;
+    padding: 0em;
+    position: fixed;
+display: block; }
+#info-ui {
     font-size: .4em;
     position: absolute;
     margin-top: 2px;
-    margin-left: 14px;}
-  #command-line #dollar-ui {
+margin-left: 14px;}
+#command-line #dollar-ui {
     position: absolute;
-    margin: 14px;}
-  #command-line #cmd {
+margin: 14px;}
+#command-line #cmd {
     outline: none;
     padding: 0.5em;
     font: inherit;
@@ -40,4 +71,4 @@ body {
     background-color: #333;
     border: 0px;
     border-radius: 10px;
-    padding-left: 45px; }
+padding-left: 45px; }
